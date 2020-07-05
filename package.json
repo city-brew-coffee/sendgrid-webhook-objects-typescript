@@ -1,0 +1,39 @@
+{
+  "name": "sendgrid-webhook-objects",
+  "version": "1.0.0",
+  "description": "A collection of objects for typescript to help with sendgrid webhooks",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "check-format": "prettier --check \"src/**/*.ts\""
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/city-brew-coffee/sendgrid-webhook-objects-typescript.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "City Brew Coffee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/city-brew-coffee/sendgrid-webhook-objects-typescript/issues"
+  },
+  "homepage": "https://github.com/city-brew-coffee/sendgrid-webhook-objects-typescript#readme",
+  "devDependencies": {
+    "typescript": "^3.9.6",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
